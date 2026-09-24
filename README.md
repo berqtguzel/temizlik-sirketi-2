@@ -1,4 +1,4 @@
-# Ö&I Clean – Next.js
+
 
 ## Çalıştırma
 
