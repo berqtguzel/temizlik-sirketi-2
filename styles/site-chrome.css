@@ -1,0 +1,25 @@
+.site-header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(16px); box-shadow: 0 1px 0 var(--border); }
+.contact-bar { background: var(--navy); color: white; font-size: .82rem; }
+.contact-bar__inner { min-height: 36px; display: flex; align-items: center; gap: 28px; }
+.contact-bar a { display: inline-flex; align-items: center; gap: 7px; opacity: .9; }
+.contact-bar a:hover { opacity: 1; }
+.contact-bar svg { width: 14px; }
+.contact-bar__note { margin-left: auto; opacity: .65; }
+.nav-row { height: 86px; display: grid; grid-template-columns: 235px 1fr auto; align-items: center; gap: 24px; }
+.brand img { width: 205px; height: auto; }
+.dark .brand img { content: url("/assets/logo-dark.png"); }
+.desktop-nav { display: flex; justify-content: center; align-items: center; gap: 34px; }
+.desktop-nav a { position: relative; padding: 31px 0 27px; color: var(--ink); font-size: .95rem; font-weight: 600; }
+.desktop-nav a::after { content: ""; position: absolute; right: 0; bottom: 20px; left: 0; height: 2px; background: var(--red); transform: scaleX(0); transition: transform .2s; }
+.desktop-nav a:hover::after, .desktop-nav a.is-active::after { transform: scaleX(1); }
+.nav-actions { display: flex; align-items: center; gap: 9px; }
+.icon-button, .menu-button { height: 42px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); color: var(--ink); }
+.icon-button { width: 42px; display: grid; place-items: center; cursor: pointer; }
+.icon-button svg { width: 19px; }
+.menu-button { width: 44px; padding: 10px; display: none; flex-direction: column; justify-content: center; gap: 5px; cursor: pointer; }
+.menu-button span { display: block; width: 100%; height: 2px; border-radius: 2px; background: currentColor; transition: .2s; }
+.menu-button[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-button[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.menu-button[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-nav { padding: 8px 20px 20px; border-top: 1px solid var(--border); background: var(--bg); }
+.mobile-nav a { display: block; padding: 13px 2px; border-bottom: 1px solid var(--border); font-weight: 600; }

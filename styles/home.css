@@ -1,0 +1,12 @@
+.hero { position: relative; min-height: min(790px, calc(100vh - 122px)); display: flex; align-items: center; overflow: hidden; color: white; background: var(--navy); }
+.hero__image, .hero__overlay { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero__image { object-fit: cover; object-position: center; }
+.hero__overlay { background: linear-gradient(90deg, rgba(8, 25, 57, .94) 0%, rgba(14, 43, 91, .76) 48%, rgba(14, 43, 91, .12) 100%); }
+.hero__content { position: relative; padding-block: 95px; }
+.hero__lead { max-width: 650px; margin: 0 0 34px; color: rgba(255,255,255,.82); font-size: clamp(1.05rem, 1.8vw, 1.25rem); }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero__trust { margin-top: 62px; display: flex; gap: 0; }
+.hero__trust span { min-width: 155px; padding-right: 30px; margin-right: 30px; display: flex; flex-direction: column; border-right: 1px solid rgba(255,255,255,.24); }
+.hero__trust span:last-child { border: 0; }
+.hero__trust b { font: 800 1.6rem "Segoe UI", Arial, sans-serif; }
+.hero__trust small { color: rgba(255,255,255,.65); }

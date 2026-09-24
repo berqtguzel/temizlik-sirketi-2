@@ -1,0 +1,24 @@
+:root {
+  --navy: #122b5c;
+  --blue: #24488f;
+  --blue-2: #2e5eb9;
+  --red: #dc2530;
+  --ink: #142039;
+  --muted: #667085;
+  --bg: #ffffff;
+  --surface: #f3f6fb;
+  --card: #ffffff;
+  --border: #dfe6ef;
+  --shadow: 0 22px 55px rgba(20, 32, 57, .12);
+  --radius: 22px;
+}
+
+html.dark {
+  --ink: #eef3ff;
+  --muted: #abb8ce;
+  --bg: #0b1424;
+  --surface: #111f35;
+  --card: #162740;
+  --border: #2b3d58;
+  --shadow: 0 22px 55px rgba(0, 0, 0, .3);
+}
